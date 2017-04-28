@@ -1,0 +1,14 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES5",
+    "module": "commonjs",
+    "rootDir": ".",
+    "outDir": "./testing",
+    "noImplicitAny": true
+  },
+  "files": [
+    "./tests/index.ts"
+  ]
+}

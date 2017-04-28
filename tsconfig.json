@@ -1,0 +1,14 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES5",
+    "rootDir": ".",
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "declaration": true
+  },
+  "files": [
+    "./index.ts"
+  ]
+}
