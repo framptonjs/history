@@ -13,6 +13,28 @@ module.exports = {
     libraryTarget: 'commonjs2'
   },
 
+  module: {
+    loaders: [
+      {
+        test: /\.js?/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      }
+    ]
+  },
+
+  externals : {
+    '@frampton/core': {
+      commonjs2: "@frampton/core"
+    },
+    '@frampton/style': {
+      commonjs2: "@frampton/style"
+    },
+    '@frampton/events': {
+      commonjs2: "@frampton/events"
+    }
+  },
+
   resolve: {
     extensions: [ '.js' ]
   }

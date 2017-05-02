@@ -24,22 +24,27 @@
     "algebraic",
     "event stream",
     "functional",
-    "functional reactive"
+    "functional reactive",
+    "browser history"
   ],
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "3.4.34",
     "@types/mocha": "2.2.39",
+    "babel-core": "6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-preset-es2015": "6.24.1",
+    "chai": "^3.5.0",
     "karma": "1.6.0",
     "karma-mocha": "1.3.0",
     "karma-phantomjs-launcher": "1.0.4",
-    "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "typescript": "^2.2.2",
     "webpack": "^2.2.1"
   },
   "peerDependencies": {
     "@frampton/core": "~0.0.8",
+    "@frampton/style": "~0.0.5",
     "@frampton/events": "~0.0.3"
   }
 }
