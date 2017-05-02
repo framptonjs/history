@@ -20,7 +20,7 @@ function createMockLocation(): Location {
 
 
 export default function location_api(): Location {
-  if (Env.isTest()) {
+  if (!window || Env.isTest()) {
     return createMockLocation();
   } else {
     return window.location;

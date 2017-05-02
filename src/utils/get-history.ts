@@ -42,7 +42,7 @@ function createMockHistory(): History {
 
 
 export default function history_api(): History {
-  if (Env.isTest()) {
+  if (!window || Env.isTest()) {
     return createMockHistory();
   } else {
     return window.history;

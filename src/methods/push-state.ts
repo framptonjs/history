@@ -18,7 +18,7 @@ export default (data: any, name: string, path: string): Effect<void> =>
       path: path
     };
 
-    getHistory().pushState(state, state.name, state.path);
+    getHistory().pushState(state, name, path);
     pushHistory(state);
 
     sinks.resolve(null);
