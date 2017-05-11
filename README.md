@@ -72,7 +72,13 @@ hash.onValue((hashname: string): void => {
 When working with @frampton/history it is suggested to use the provided methods for working with browser history. Frampton maintains some internal state that will get out of sync with the browser if using the native methods.
 
 ```
-import { pushState, replaceState, setHash } from '@frampton/history';
+import {
+  pushState,
+  replacePath,
+  replaceState,
+  setHash,
+  setPath
+} from '@frampton/history';
 ```
 
 #### pushState
@@ -81,6 +87,14 @@ Add a new history entry to the browser.
 
 ```
 pushState({}, 'home_path', '/home');
+```
+
+#### replacePath
+
+Change the current browser path by replacing the current history entry.
+
+```
+replacePath('/home');
 ```
 
 #### replaceState
@@ -97,4 +111,12 @@ Change the current url hash.
 
 ```
 setHash('home');
+```
+
+#### setPath
+
+Change the current browser path by adding new history entry.
+
+```
+setPath('/user/1');
 ```

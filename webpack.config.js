@@ -18,6 +18,7 @@ module.exports = {
       {
         test: /\.js?/,
         exclude: /node_modules/,
+        exclude: /node_modules\/(?!@frampton)/,
         loader: 'babel-loader'
       }
     ]
@@ -37,5 +38,8 @@ module.exports = {
 
   resolve: {
     extensions: [ '.js' ]
-  }
+  },
+
+  // Source maps support ("inline-source-map" also works)
+  devtool: "source-map"
 };

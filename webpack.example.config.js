@@ -11,9 +11,19 @@ module.exports = {
     path: resolve('examples')
   },
 
-  // Currently we need to add '.ts' to the resolve.extensions array.
   resolve: {
     extensions: [ '.js' ]
+  },
+
+  module: {
+    loaders: [
+      {
+        test: /\.js?/,
+        exclude: /node_modules/,
+        exclude: /node_modules\/(?!@frampton)/,
+        loader: 'babel-loader'
+      }
+    ]
   },
 
   // Source maps support ('inline-source-map' also works)
